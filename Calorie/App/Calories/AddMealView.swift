@@ -12,9 +12,23 @@ struct AddMealView: View {
     @Inject(\.caloriesInteractor) var interactor: any PCaloriesInteractor
     @Store(\.caloriesStore) var store: any PCaloriesStore
     
+    // MARK: Local state
+    @State private var meal: String = ""
+    @State private var description: String = ""
+    @State private var calories: String = ""
+    private var numberCalories: Int {
+        Int(calories) ?? 0
+    }
+    private var userMeal: Meal {
+        Meal(meal: meal, description: description, calories: numberCalories)
+    }
+    
     // MARK: View composition
     var body: some View {
-        VStack {
+        ZStack {
+            Color.background
+                .ignoresSafeArea()
+            
             caloriesContent
         }
         .frame(maxWidth: .infinity)
@@ -25,10 +39,42 @@ struct AddMealView: View {
 extension AddMealView {
     var caloriesContent: some View {
         VStack {
-            RoundedButton(title: "Save", loading: store.addMealLoading, action: interactor.closeAddMeal(meal: Meal(id: "", meal: "", description: "", calories: 1000)))
-            RoundedButton(title: "Cancel", action: interactor.closeAddMeal())
+            // Live updating meal cell as the user enters details
+            MealCell(meal: meal, description: description, calories: numberCalories)
+                .padding(.bottom)
+            
+            // Input fields
+            
+            buildInputField(title: "Meal", text: $meal)
+            buildInputField(title:"Description", text: $description)
+            buildInputField(title:"Calories", text: $calories)
+            
+            // User actions
+            actions
+                .padding(.top)
         }
         .padding()
+    }
+    
+    func buildInputField(title: String, text: Binding<String>) -> some View {
+        RoundedShape(backgroundColor: .surface) { TextField(title, text: text) }
+    }
+    
+    var actions: some View {
+        VStack {
+            // Save our user's meal
+            RoundedButton(
+                title: "Save",
+                loading: store.addMealLoading,
+                action: interactor.closeAddMeal(meal: userMeal)
+            )
+            
+            // Cancel our users meal
+            RoundedButton(
+                title: "Cancel",
+                action: interactor.closeAddMeal()
+            )
+        }
     }
 }
 

@@ -18,7 +18,7 @@ final class AppNavigationStore: StoreObject, PAppNavigationStore {
     @Published var tabs: [NavItem] = [
         NavItem(
             identifier: Constants.Tabs.rewards,
-            icon: Constants.Icons.discountTag,
+            icon: Constants.Icons.menu,
             destination: CaloriesView()
         )
     ]

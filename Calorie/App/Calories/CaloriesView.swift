@@ -98,7 +98,7 @@ struct CaloriesView_Previews: PreviewProvider, DependencyMocker {
         var addMealLoading: Bool = false
         var meals: StoreState<[Meal]> =
             .loaded(
-                data: [Meal](repeating: Meal(id: UUID().uuidString, meal: "Breakfast", description: "Steak and chips", calories: 1000), count: 5)
+                data: [Meal](repeating: Meal(meal: "Breakfast", description: "Steak and chips", calories: 1000), count: 5)
             )
     }
     

@@ -36,6 +36,7 @@
 		ACFF7D42297EBCC700080C0F /* ChildGeometryReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACFF7D41297EBCC700080C0F /* ChildGeometryReader.swift */; };
 		ACFF7D45297EBD6800080C0F /* AddMealView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACFF7D44297EBD6800080C0F /* AddMealView.swift */; };
 		ACFF7D47297EC11600080C0F /* Encodable+asBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACFF7D46297EC11600080C0F /* Encodable+asBody.swift */; };
+		ACFF7D49297F4F3A00080C0F /* AddMealResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACFF7D48297F4F3A00080C0F /* AddMealResponse.swift */; };
 		D047BC46297988D4007C4423 /* View+forward.swift in Sources */ = {isa = PBXBuildFile; fileRef = D047BC2F297988D3007C4423 /* View+forward.swift */; };
 		D047BC47297988D4007C4423 /* Future+fromAsync.swift in Sources */ = {isa = PBXBuildFile; fileRef = D047BC31297988D3007C4423 /* Future+fromAsync.swift */; };
 		D047BC48297988D4007C4423 /* Collection+cancel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D047BC32297988D3007C4423 /* Collection+cancel.swift */; };
@@ -117,6 +118,7 @@
 		ACFF7D41297EBCC700080C0F /* ChildGeometryReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChildGeometryReader.swift; sourceTree = "<group>"; };
 		ACFF7D44297EBD6800080C0F /* AddMealView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMealView.swift; sourceTree = "<group>"; };
 		ACFF7D46297EC11600080C0F /* Encodable+asBody.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Encodable+asBody.swift"; sourceTree = "<group>"; };
+		ACFF7D48297F4F3A00080C0F /* AddMealResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMealResponse.swift; sourceTree = "<group>"; };
 		D047BC2F297988D3007C4423 /* View+forward.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "View+forward.swift"; sourceTree = "<group>"; };
 		D047BC31297988D3007C4423 /* Future+fromAsync.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Future+fromAsync.swift"; sourceTree = "<group>"; };
 		D047BC32297988D3007C4423 /* Collection+cancel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Collection+cancel.swift"; sourceTree = "<group>"; };
@@ -303,6 +305,7 @@
 			isa = PBXGroup;
 			children = (
 				D047BC76297E6A57007C4423 /* Meal.swift */,
+				ACFF7D48297F4F3A00080C0F /* AddMealResponse.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -653,6 +656,7 @@
 				D073D27728F6263300B9A98F /* AppRootInteractor.swift in Sources */,
 				AC0F88082885629A00E9EF85 /* CustomTabView.swift in Sources */,
 				ACD985AB28E33DB30084AB14 /* Images.swift in Sources */,
+				ACFF7D49297F4F3A00080C0F /* AddMealResponse.swift in Sources */,
 				D0D04AA328E9C5F200BDFC69 /* RouteableView.swift in Sources */,
 				ACD985A728E29C8D0084AB14 /* NavItem.swift in Sources */,
 				D047BC49297988D4007C4423 /* Publisher+toAsync.swift in Sources */,

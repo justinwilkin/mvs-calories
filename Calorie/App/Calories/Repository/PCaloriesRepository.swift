@@ -10,7 +10,7 @@ import Foundation
 
 protocol PCaloriesRepository: Repository {
     func getMeals() -> AnyPublisher<[Meal], Error>
-    func addMeal(meal: Meal) -> AnyPublisher<String, Error>
+    func addMeal(meal: Meal) -> AnyPublisher<AddMealResponse, Error>
 }
 
 extension DependencyMap {

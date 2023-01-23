@@ -45,7 +45,7 @@ struct KineticTabItem_Previews: PreviewProvider {
     static var previews: some View {
         CustomTabItemView(
             id: Constants.Tabs.rewards,
-            icon: Constants.Icons.discountTag,
+            icon: Constants.Icons.menu,
             isSelected: true
         )
     }

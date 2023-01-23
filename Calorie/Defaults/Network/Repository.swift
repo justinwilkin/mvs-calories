@@ -39,6 +39,9 @@ extension Repository {
         // Return a network publisher
         return URLSession.shared.dataTaskPublisher(for: request)
             .map(\.data)
+            .handleEvents(receiveOutput: {
+                print(String(decoding: $0, as: UTF8.self))
+            })
             .decode(type: Decode.self, decoder: JSONDecoder())
             .eraseToAnyPublisher()
     }

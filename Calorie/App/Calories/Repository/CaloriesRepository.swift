@@ -9,11 +9,17 @@ import Combine
 import Foundation
 
 struct CaloriesRepository: PCaloriesRepository {
-    func getMeals() -> AnyPublisher<[Meal], Error> {
-        perform(.get, url: "http://localhost:8080/meals")
+    private let subscriptionKey = "c6ead20a03d9983402b83debbfc68a333758a"
+    private let mealsUrl = "https://calories-932e.restdb.io/rest/meals"
+    private var headers: [String: String] {
+        ["x-apikey": subscriptionKey]
     }
     
-    func addMeal(meal: Meal) -> AnyPublisher<String, Error> {
-        perform(.post(body: meal.asBody()), url: "http://localhost:8080/meal")
+    func getMeals() -> AnyPublisher<[Meal], Error> {
+        perform(.get, url: mealsUrl, headers: headers)
+    }
+    
+    func addMeal(meal: Meal) -> AnyPublisher<AddMealResponse, Error> {
+        perform(.post(body: meal.asBody()), url: mealsUrl, headers: headers)
     }
 }

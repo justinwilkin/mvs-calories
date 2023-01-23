@@ -9,6 +9,6 @@ import SwiftUI
 
 extension Constants {
     struct Icons {
-        static let discountTag = Image("discount-tag")
+        static let menu = Image("menu")
     }
 }

@@ -88,7 +88,7 @@ struct CustomTabView_Previews: PreviewProvider {
     static var tabs = [
         CustomTabItemView(
             id: Constants.Tabs.rewards,
-            icon: Constants.Icons.discountTag,
+            icon: Constants.Icons.menu,
             isSelected: false
         ),
     ]
