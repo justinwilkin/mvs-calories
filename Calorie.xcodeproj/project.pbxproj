@@ -313,7 +313,6 @@
 				ACFF7D25297E8E7E00080C0F /* Calorie-Info.plist */,
 				AC5043BC2866EA47001405DA /* Calorie */,
 				ACCB6A342866EB9800A94783 /* Resources */,
-				ACFB424628FEA28300D0BDBD /* CalorieTests */,
 				ACF956DB2866E54100ACA589 /* Products */,
 				D0D04B1728EDC6D000BDFC69 /* Frameworks */,
 			);
@@ -326,14 +325,6 @@
 				ACFB424528FEA28300D0BDBD /* CalorieTests.xctest */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		ACFB424628FEA28300D0BDBD /* CalorieTests */ = {
-			isa = PBXGroup;
-			children = (
-				D01C5876295ACC2C0061A597 /* Tests */,
-			);
-			path = CalorieTests;
 			sourceTree = "<group>";
 		};
 		ACFF7D2C297E9BF200080C0F /* Theme */ = {
@@ -362,13 +353,6 @@
 				ACFF7D3F297EBC8E00080C0F /* View+halfSheet.swift */,
 			);
 			path = "Half Sheet";
-			sourceTree = "<group>";
-		};
-		D01C5876295ACC2C0061A597 /* Tests */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Tests;
 			sourceTree = "<group>";
 		};
 		D047BC2A297988C7007C4423 /* Core */ = {
