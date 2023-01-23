@@ -33,8 +33,11 @@ struct AppRootView: View {
         
         // MARK: Modal sheet
         // Global sheet subject for presenting modal sheet overlays
-        .sheet(isPresented: $router.shouldShowModalSheetOverlay) {
+        .halfSheet(isPresented: $router.shouldShowModalSheetOverlay) {
             router.modalSheetOverlaySubject?.compose()
+        } onDismiss: {
+            // Trigger our close modal on dismiss as to not show again
+            router.closeModalSheet()
         }
     }
 }

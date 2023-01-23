@@ -111,7 +111,7 @@ class RouterStore: StoreObject {
     /// wrapping it in a `RouteableView` for composition to the SwiftUI view heirarchy.
     ///
     /// - parameter view: the view to open in a full screen sheet to
-    func openModalSheet(with view: some View, identifier: UUID) {
+    func openModalSheet(with view: some View, identifier: UUID = UUID()) {
         // Wrap our new view for composition and open
         modalSheetOverlaySubject = RouteableView(identifier: identifier, view)
     }

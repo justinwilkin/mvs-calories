@@ -13,8 +13,10 @@ final class CaloriesStore: StoreObject, PCaloriesStore {
     // MARK: - Injection
     
     // MARK: - Instance properties
+    @Published var meals: StoreState<[Meal]> = .loading()
     
-    // MARK: - Rewards view state
+    // MARK: - Meals view state
+    @Published var addMealLoading: Bool = false
     
     // MARK: - Lifecycle
 }

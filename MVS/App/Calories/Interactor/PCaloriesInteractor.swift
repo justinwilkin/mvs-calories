@@ -6,7 +6,16 @@
 //
 
 protocol PCaloriesInteractor: Interactor {
+    func openAddMeal()
+    func closeAddMeal(meal: Meal?)
+}
 
+// MARK: - Convenience
+extension PCaloriesInteractor {
+    // Forward closeAddMeal methods to nil meals without params
+    func closeAddMeal() {
+        closeAddMeal(meal: nil)
+    }
 }
 
 // MARK: - Dependency registration

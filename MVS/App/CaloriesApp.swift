@@ -1,14 +1,14 @@
 //
-//  kineticApp.swift
+//  CaloriesApp.swift
 //  Shared
 //
-//  Created by Justin Wilkin on 25/6/2022.
+//  Created by Justin Wilkin on 23/01/2023.
 //
 
 import SwiftUI
 
 @main
-struct Kinetic: App {
+struct CaloriesApp: App {
     
     var body: some Scene {
         WindowGroup {

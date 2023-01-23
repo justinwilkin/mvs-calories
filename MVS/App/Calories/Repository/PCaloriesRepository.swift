@@ -9,7 +9,8 @@ import Combine
 import Foundation
 
 protocol PCaloriesRepository: Repository {
-    func getMeals() -> AnyPublisher<Calories, Error>
+    func getMeals() -> AnyPublisher<[Meal], Error>
+    func addMeal(meal: Meal) -> AnyPublisher<String, Error>
 }
 
 extension DependencyMap {

@@ -7,8 +7,10 @@
 
 protocol PCaloriesStore: StoreObject {
     // MARK: Data state
+    var meals: StoreState<[Meal]> { get set }
     
     // MARK: View state
+    var addMealLoading: Bool { get set }
     
     // MARK: - Store functions
 }

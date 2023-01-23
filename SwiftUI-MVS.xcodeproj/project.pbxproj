@@ -18,11 +18,24 @@
 		ACD985A728E29C8D0084AB14 /* NavItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD985A628E29C8D0084AB14 /* NavItem.swift */; };
 		ACD985AB28E33DB30084AB14 /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD985AA28E33DB30084AB14 /* Images.swift */; };
 		ACECBEF5292213FE00FCBBA9 /* PCaloriesRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACECBEF2292213FE00FCBBA9 /* PCaloriesRepository.swift */; };
-		ACECBEF7292213FE00FCBBA9 /* Calories.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACECBEF4292213FE00FCBBA9 /* Calories.swift */; };
 		ACECBEF92922147E00FCBBA9 /* CaloriesRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACECBEF82922147E00FCBBA9 /* CaloriesRepository.swift */; };
-		ACF956FB2866E54100ACA589 /* Kinetic.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF956D32866E53F00ACA589 /* Kinetic.swift */; };
+		ACF956FB2866E54100ACA589 /* CaloriesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF956D32866E53F00ACA589 /* CaloriesApp.swift */; };
 		ACF956FD2866E54100ACA589 /* AppRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF956D42866E53F00ACA589 /* AppRootView.swift */; };
 		ACF956FF2866E54100ACA589 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACF956D52866E54000ACA589 /* Assets.xcassets */; };
+		ACFF7D24297E8AC400080C0F /* Publisher+mapEvents.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACFF7D23297E8AC400080C0F /* Publisher+mapEvents.swift */; };
+		ACFF7D2B297E995100080C0F /* MealCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACFF7D2A297E995100080C0F /* MealCell.swift */; };
+		ACFF7D2E297E9BF900080C0F /* ColorTokens.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACFF7D2D297E9BF900080C0F /* ColorTokens.swift */; };
+		ACFF7D30297E9D0B00080C0F /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACFF7D2F297E9D0B00080C0F /* Theme.swift */; };
+		ACFF7D32297E9DF000080C0F /* RoundedSurface.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACFF7D31297E9DF000080C0F /* RoundedSurface.swift */; };
+		ACFF7D34297EA1ED00080C0F /* PlaceholderMeal.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACFF7D33297EA1ED00080C0F /* PlaceholderMeal.swift */; };
+		ACFF7D36297EA34A00080C0F /* Shimmer.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACFF7D35297EA34A00080C0F /* Shimmer.swift */; };
+		ACFF7D39297EBA6F00080C0F /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACFF7D38297EBA6F00080C0F /* RoundedButton.swift */; };
+		ACFF7D3C297EBC0F00080C0F /* HalfSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACFF7D3B297EBC0F00080C0F /* HalfSheet.swift */; };
+		ACFF7D3E297EBC5900080C0F /* HalfSheetController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACFF7D3D297EBC5900080C0F /* HalfSheetController.swift */; };
+		ACFF7D40297EBC8E00080C0F /* View+halfSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACFF7D3F297EBC8E00080C0F /* View+halfSheet.swift */; };
+		ACFF7D42297EBCC700080C0F /* ChildGeometryReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACFF7D41297EBCC700080C0F /* ChildGeometryReader.swift */; };
+		ACFF7D45297EBD6800080C0F /* AddMealView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACFF7D44297EBD6800080C0F /* AddMealView.swift */; };
+		ACFF7D47297EC11600080C0F /* Encodable+asBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACFF7D46297EC11600080C0F /* Encodable+asBody.swift */; };
 		D01C5875295ABAA30061A597 /* FeatureStoreRegistrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D01C5874295ABAA30061A597 /* FeatureStoreRegistrationTests.swift */; };
 		D01C587D295B06540061A597 /* FeatureStoreRecallTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D01C587C295B06540061A597 /* FeatureStoreRecallTests.swift */; };
 		D01C587F295B0AA20061A597 /* FeatureFlagServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D01C587E295B0AA20061A597 /* FeatureFlagServiceTests.swift */; };
@@ -52,10 +65,8 @@
 		D047BC74297E5F33007C4423 /* CaloriesInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3BAEDB28F59E1F00B0F2F6 /* CaloriesInteractor.swift */; };
 		D047BC75297E5F43007C4423 /* CaloriesStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05C24F128F248B400D23389 /* CaloriesStore.swift */; };
 		D047BC77297E6A57007C4423 /* Meal.swift in Sources */ = {isa = PBXBuildFile; fileRef = D047BC76297E6A57007C4423 /* Meal.swift */; };
-		D05C24F428F2492700D23389 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05C24EF28F248B400D23389 /* HomeView.swift */; };
+		D05C24F428F2492700D23389 /* CaloriesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05C24EF28F248B400D23389 /* CaloriesView.swift */; };
 		D05C24F528F2492700D23389 /* PCaloriesStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05C24F228F248B400D23389 /* PCaloriesStore.swift */; };
-		D05C24FF28F2A12700D23389 /* ShopReward.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05C24FE28F2A12700D23389 /* ShopReward.swift */; };
-		D05C250228F2F0C700D23389 /* FuelReward.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05C250128F2F0C700D23389 /* FuelReward.swift */; };
 		D073D27728F6263300B9A98F /* AppRootInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D073D27628F6263300B9A98F /* AppRootInteractor.swift */; };
 		D073D27928F6266000B9A98F /* PAppRootInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D073D27828F6266000B9A98F /* PAppRootInteractor.swift */; };
 		D085BDEF28F136AA0076FCB7 /* CustomTabItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D085BDEE28F136AA0076FCB7 /* CustomTabItemView.swift */; };
@@ -87,9 +98,8 @@
 		ACD985A628E29C8D0084AB14 /* NavItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavItem.swift; sourceTree = "<group>"; };
 		ACD985AA28E33DB30084AB14 /* Images.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Images.swift; sourceTree = "<group>"; };
 		ACECBEF2292213FE00FCBBA9 /* PCaloriesRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PCaloriesRepository.swift; sourceTree = "<group>"; };
-		ACECBEF4292213FE00FCBBA9 /* Calories.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Calories.swift; sourceTree = "<group>"; };
 		ACECBEF82922147E00FCBBA9 /* CaloriesRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaloriesRepository.swift; sourceTree = "<group>"; };
-		ACF956D32866E53F00ACA589 /* Kinetic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Kinetic.swift; sourceTree = "<group>"; };
+		ACF956D32866E53F00ACA589 /* CaloriesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaloriesApp.swift; sourceTree = "<group>"; };
 		ACF956D42866E53F00ACA589 /* AppRootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRootView.swift; sourceTree = "<group>"; };
 		ACF956D52866E54000ACA589 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ACF956DA2866E54100ACA589 /* SwiftUI-MVS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SwiftUI-MVS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -97,6 +107,21 @@
 		ACFEF64328FBF96C005E8623 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
 		ACFEF64A28FBF9C7005E8623 /* .swiftlint.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = SOURCE_ROOT; };
 		ACFEF64B28FBF9C7005E8623 /* swiftlint.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = swiftlint.sh; sourceTree = SOURCE_ROOT; };
+		ACFF7D23297E8AC400080C0F /* Publisher+mapEvents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Publisher+mapEvents.swift"; sourceTree = "<group>"; };
+		ACFF7D25297E8E7E00080C0F /* SwiftUI-MVS-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "SwiftUI-MVS-Info.plist"; sourceTree = "<group>"; };
+		ACFF7D2A297E995100080C0F /* MealCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealCell.swift; sourceTree = "<group>"; };
+		ACFF7D2D297E9BF900080C0F /* ColorTokens.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorTokens.swift; sourceTree = "<group>"; };
+		ACFF7D2F297E9D0B00080C0F /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		ACFF7D31297E9DF000080C0F /* RoundedSurface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedSurface.swift; sourceTree = "<group>"; };
+		ACFF7D33297EA1ED00080C0F /* PlaceholderMeal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceholderMeal.swift; sourceTree = "<group>"; };
+		ACFF7D35297EA34A00080C0F /* Shimmer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shimmer.swift; sourceTree = "<group>"; };
+		ACFF7D38297EBA6F00080C0F /* RoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
+		ACFF7D3B297EBC0F00080C0F /* HalfSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HalfSheet.swift; sourceTree = "<group>"; };
+		ACFF7D3D297EBC5900080C0F /* HalfSheetController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HalfSheetController.swift; sourceTree = "<group>"; };
+		ACFF7D3F297EBC8E00080C0F /* View+halfSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+halfSheet.swift"; sourceTree = "<group>"; };
+		ACFF7D41297EBCC700080C0F /* ChildGeometryReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChildGeometryReader.swift; sourceTree = "<group>"; };
+		ACFF7D44297EBD6800080C0F /* AddMealView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMealView.swift; sourceTree = "<group>"; };
+		ACFF7D46297EC11600080C0F /* Encodable+asBody.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Encodable+asBody.swift"; sourceTree = "<group>"; };
 		D01C5874295ABAA30061A597 /* FeatureStoreRegistrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeatureStoreRegistrationTests.swift; sourceTree = "<group>"; };
 		D01C587C295B06540061A597 /* FeatureStoreRecallTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeatureStoreRecallTests.swift; sourceTree = "<group>"; };
 		D01C587E295B0AA20061A597 /* FeatureFlagServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeatureFlagServiceTests.swift; sourceTree = "<group>"; };
@@ -124,11 +149,9 @@
 		D047BC70297D655E007C4423 /* MergingStrategy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MergingStrategy.swift; sourceTree = "<group>"; };
 		D047BC72297D65EF007C4423 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
 		D047BC76297E6A57007C4423 /* Meal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meal.swift; sourceTree = "<group>"; };
-		D05C24EF28F248B400D23389 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		D05C24EF28F248B400D23389 /* CaloriesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaloriesView.swift; sourceTree = "<group>"; };
 		D05C24F128F248B400D23389 /* CaloriesStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaloriesStore.swift; sourceTree = "<group>"; };
 		D05C24F228F248B400D23389 /* PCaloriesStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PCaloriesStore.swift; sourceTree = "<group>"; };
-		D05C24FE28F2A12700D23389 /* ShopReward.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopReward.swift; sourceTree = "<group>"; };
-		D05C250128F2F0C700D23389 /* FuelReward.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FuelReward.swift; sourceTree = "<group>"; };
 		D073D27628F6263300B9A98F /* AppRootInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRootInteractor.swift; sourceTree = "<group>"; };
 		D073D27828F6266000B9A98F /* PAppRootInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PAppRootInteractor.swift; sourceTree = "<group>"; };
 		D085BDEE28F136AA0076FCB7 /* CustomTabItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabItemView.swift; sourceTree = "<group>"; };
@@ -167,7 +190,6 @@
 		AC3BAEDD28F59E2B00B0F2F6 /* Store */ = {
 			isa = PBXGroup;
 			children = (
-				D05C250028F2F0B100D23389 /* Reward Items */,
 				D05C24F128F248B400D23389 /* CaloriesStore.swift */,
 				D05C24F228F248B400D23389 /* PCaloriesStore.swift */,
 			);
@@ -187,6 +209,7 @@
 			isa = PBXGroup;
 			children = (
 				AC5043BD2866EA56001405DA /* Defaults */,
+				ACFF7D37297EBA5E00080C0F /* Components */,
 				ACCB6A332866EB6F00A94783 /* App */,
 			);
 			path = MVS;
@@ -195,6 +218,7 @@
 		AC5043BD2866EA56001405DA /* Defaults */ = {
 			isa = PBXGroup;
 			children = (
+				ACFF7D2C297E9BF200080C0F /* Theme */,
 				D047BC69297D6131007C4423 /* Network */,
 				ACCB6A2F2866EB3100A94783 /* Constants */,
 				D047BC2A297988C7007C4423 /* Core */,
@@ -236,9 +260,9 @@
 		ACCB6A332866EB6F00A94783 /* App */ = {
 			isa = PBXGroup;
 			children = (
-				D05C24EE28F2489C00D23389 /* Home */,
+				D05C24EE28F2489C00D23389 /* Calories */,
 				D0D04AB928EB95B000BDFC69 /* Root */,
-				ACF956D32866E53F00ACA589 /* Kinetic.swift */,
+				ACF956D32866E53F00ACA589 /* CaloriesApp.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -288,7 +312,6 @@
 			isa = PBXGroup;
 			children = (
 				D047BC76297E6A57007C4423 /* Meal.swift */,
-				ACECBEF4292213FE00FCBBA9 /* Calories.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -296,6 +319,7 @@
 		ACF956CD2866E53F00ACA589 = {
 			isa = PBXGroup;
 			children = (
+				ACFF7D25297E8E7E00080C0F /* SwiftUI-MVS-Info.plist */,
 				AC5043BC2866EA47001405DA /* MVS */,
 				ACCB6A342866EB9800A94783 /* Resources */,
 				ACFB424628FEA28300D0BDBD /* KineticTests */,
@@ -330,6 +354,34 @@
 			path = "Swift Lint";
 			sourceTree = "<group>";
 		};
+		ACFF7D2C297E9BF200080C0F /* Theme */ = {
+			isa = PBXGroup;
+			children = (
+				ACFF7D2D297E9BF900080C0F /* ColorTokens.swift */,
+				ACFF7D2F297E9D0B00080C0F /* Theme.swift */,
+			);
+			path = Theme;
+			sourceTree = "<group>";
+		};
+		ACFF7D37297EBA5E00080C0F /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				ACFF7D3A297EBBF900080C0F /* Half Sheet */,
+				ACFF7D38297EBA6F00080C0F /* RoundedButton.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		ACFF7D3A297EBBF900080C0F /* Half Sheet */ = {
+			isa = PBXGroup;
+			children = (
+				ACFF7D3B297EBC0F00080C0F /* HalfSheet.swift */,
+				ACFF7D3D297EBC5900080C0F /* HalfSheetController.swift */,
+				ACFF7D3F297EBC8E00080C0F /* View+halfSheet.swift */,
+			);
+			path = "Half Sheet";
+			sourceTree = "<group>";
+		};
 		D01C5871295A96D20061A597 /* Feature Flags */ = {
 			isa = PBXGroup;
 			children = (
@@ -362,8 +414,13 @@
 		D047BC2B297988D3007C4423 /* Utility */ = {
 			isa = PBXGroup;
 			children = (
+				ACFF7D31297E9DF000080C0F /* RoundedSurface.swift */,
 				D047BC2F297988D3007C4423 /* View+forward.swift */,
 				D047BC70297D655E007C4423 /* MergingStrategy.swift */,
+				ACFF7D23297E8AC400080C0F /* Publisher+mapEvents.swift */,
+				ACFF7D35297EA34A00080C0F /* Shimmer.swift */,
+				ACFF7D41297EBCC700080C0F /* ChildGeometryReader.swift */,
+				ACFF7D46297EC11600080C0F /* Encodable+asBody.swift */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
@@ -448,24 +505,18 @@
 			path = Network;
 			sourceTree = "<group>";
 		};
-		D05C24EE28F2489C00D23389 /* Home */ = {
+		D05C24EE28F2489C00D23389 /* Calories */ = {
 			isa = PBXGroup;
 			children = (
 				ACECBEDF2922137D00FCBBA9 /* Repository */,
 				AC3BAEDD28F59E2B00B0F2F6 /* Store */,
 				AC3BAEDE28F59E3C00B0F2F6 /* Interactor */,
-				D05C24EF28F248B400D23389 /* HomeView.swift */,
+				D05C24EF28F248B400D23389 /* CaloriesView.swift */,
+				ACFF7D44297EBD6800080C0F /* AddMealView.swift */,
+				ACFF7D2A297E995100080C0F /* MealCell.swift */,
+				ACFF7D33297EA1ED00080C0F /* PlaceholderMeal.swift */,
 			);
-			path = Home;
-			sourceTree = "<group>";
-		};
-		D05C250028F2F0B100D23389 /* Reward Items */ = {
-			isa = PBXGroup;
-			children = (
-				D05C24FE28F2A12700D23389 /* ShopReward.swift */,
-				D05C250128F2F0C700D23389 /* FuelReward.swift */,
-			);
-			path = "Reward Items";
+			path = Calories;
 			sourceTree = "<group>";
 		};
 		D0D04AB928EB95B000BDFC69 /* Root */ = {
@@ -594,6 +645,7 @@
 				AC3BAEE028F59E4C00B0F2F6 /* PCaloriesInteractor.swift in Sources */,
 				AC0F884E2885A5C900E9EF85 /* AppNavigationStore.swift in Sources */,
 				ACECBEF5292213FE00FCBBA9 /* PCaloriesRepository.swift in Sources */,
+				ACFF7D40297EBC8E00080C0F /* View+halfSheet.swift in Sources */,
 				D047BC74297E5F33007C4423 /* CaloriesInteractor.swift in Sources */,
 				ACF956FD2866E54100ACA589 /* AppRootView.swift in Sources */,
 				D047BC6F297D6523007C4423 /* Headers.swift in Sources */,
@@ -601,38 +653,48 @@
 				D047BC47297988D4007C4423 /* Future+fromAsync.swift in Sources */,
 				AC71D0D828E1E1D2003A00B9 /* Tabs.swift in Sources */,
 				D047BC6129798C83007C4423 /* DependencyLifecycleScope.swift in Sources */,
+				ACFF7D39297EBA6F00080C0F /* RoundedButton.swift in Sources */,
+				ACFF7D32297E9DF000080C0F /* RoundedSurface.swift in Sources */,
 				D047BC6529798C87007C4423 /* InjectPublished.swift in Sources */,
+				ACFF7D45297EBD6800080C0F /* AddMealView.swift in Sources */,
 				D047BC6329798C83007C4423 /* DependencyMocker.swift in Sources */,
 				AC0F885F2885B83B00E9EF85 /* Router.swift in Sources */,
 				D047BC4C297988D4007C4423 /* View+InteractorLifecycle.swift in Sources */,
+				ACFF7D34297EA1ED00080C0F /* PlaceholderMeal.swift in Sources */,
+				ACFF7D42297EBCC700080C0F /* ChildGeometryReader.swift in Sources */,
 				D085BDEF28F136AA0076FCB7 /* CustomTabItemView.swift in Sources */,
 				D047BC4B297988D4007C4423 /* PInteractor.swift in Sources */,
+				ACFF7D2E297E9BF900080C0F /* ColorTokens.swift in Sources */,
 				D073D27928F6266000B9A98F /* PAppRootInteractor.swift in Sources */,
+				ACFF7D24297E8AC400080C0F /* Publisher+mapEvents.swift in Sources */,
 				D047BC51297988D4007C4423 /* AnyObservableObject.swift in Sources */,
 				D047BC71297D655E007C4423 /* MergingStrategy.swift in Sources */,
 				D047BC6B297D613B007C4423 /* Repository.swift in Sources */,
+				ACFF7D3E297EBC5900080C0F /* HalfSheetController.swift in Sources */,
 				D047BC53297988D4007C4423 /* PStore.swift in Sources */,
 				D047BC6229798C83007C4423 /* DependencyMap.swift in Sources */,
-				ACF956FB2866E54100ACA589 /* Kinetic.swift in Sources */,
+				ACF956FB2866E54100ACA589 /* CaloriesApp.swift in Sources */,
 				D047BC6429798C87007C4423 /* Inject.swift in Sources */,
 				ACECBEF92922147E00FCBBA9 /* CaloriesRepository.swift in Sources */,
+				ACFF7D2B297E995100080C0F /* MealCell.swift in Sources */,
 				AC0F88052885616C00E9EF85 /* AppNavigationView.swift in Sources */,
-				D05C250228F2F0C700D23389 /* FuelReward.swift in Sources */,
+				ACFF7D3C297EBC0F00080C0F /* HalfSheet.swift in Sources */,
 				D047BC48297988D4007C4423 /* Collection+cancel.swift in Sources */,
 				AC0F8845288590D500E9EF85 /* Icons.swift in Sources */,
 				D047BC6629798C87007C4423 /* Store.swift in Sources */,
 				D047BC6D297D631B007C4423 /* HttpMethod.swift in Sources */,
+				ACFF7D47297EC11600080C0F /* Encodable+asBody.swift in Sources */,
 				D047BC54297988D4007C4423 /* StoreObject.swift in Sources */,
 				D047BC46297988D4007C4423 /* View+forward.swift in Sources */,
-				ACECBEF7292213FE00FCBBA9 /* Calories.swift in Sources */,
 				D047BC4A297988D4007C4423 /* Interactor.swift in Sources */,
 				D047BC52297988D4007C4423 /* StoreState.swift in Sources */,
 				D047BC77297E6A57007C4423 /* Meal.swift in Sources */,
-				D05C24FF28F2A12700D23389 /* ShopReward.swift in Sources */,
 				D0D04AB628EB90C300BDFC69 /* TabSelectSubject.swift in Sources */,
 				D0D04ADD28EC569600BDFC69 /* PAppNavigationStore.swift in Sources */,
-				D05C24F428F2492700D23389 /* HomeView.swift in Sources */,
+				D05C24F428F2492700D23389 /* CaloriesView.swift in Sources */,
+				ACFF7D36297EA34A00080C0F /* Shimmer.swift in Sources */,
 				D05C24F528F2492700D23389 /* PCaloriesStore.swift in Sources */,
+				ACFF7D30297E9D0B00080C0F /* Theme.swift in Sources */,
 				D073D27728F6263300B9A98F /* AppRootInteractor.swift in Sources */,
 				AC0F88082885629A00E9EF85 /* CustomTabView.swift in Sources */,
 				ACD985AB28E33DB30084AB14 /* Images.swift in Sources */,
@@ -804,6 +866,7 @@
 				DEVELOPMENT_TEAM = 7K8D65LF87;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "SwiftUI-MVS-Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "SwiftUI MVS";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -836,6 +899,7 @@
 				DEVELOPMENT_TEAM = 7K8D65LF87;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "SwiftUI-MVS-Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "SwiftUI MVS";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
