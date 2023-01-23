@@ -16,8 +16,8 @@
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "ACF956D92866E54000ACA589"
                BuildableName = "SwiftUI-MVS.app"
-               BlueprintName = "SwiftUI-MVS"
-               ReferencedContainer = "container:SwiftUI-MVS.xcodeproj">
+               BlueprintName = "Calorie"
+               ReferencedContainer = "container:Calorie.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -34,9 +34,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "ACFB424428FEA28300D0BDBD"
-               BuildableName = "SwiftUI-MVSTests.xctest"
-               BlueprintName = "SwiftUI-MVSTests"
-               ReferencedContainer = "container:SwiftUI-MVS.xcodeproj">
+               BuildableName = "CalorieTests.xctest"
+               BlueprintName = "CalorieTests"
+               ReferencedContainer = "container:Calorie.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -57,8 +57,8 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "ACF956D92866E54000ACA589"
             BuildableName = "SwiftUI-MVS.app"
-            BlueprintName = "SwiftUI-MVS"
-            ReferencedContainer = "container:SwiftUI-MVS.xcodeproj">
+            BlueprintName = "Calorie"
+            ReferencedContainer = "container:Calorie.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -74,8 +74,8 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "ACF956D92866E54000ACA589"
             BuildableName = "SwiftUI-MVS.app"
-            BlueprintName = "SwiftUI-MVS"
-            ReferencedContainer = "container:SwiftUI-MVS.xcodeproj">
+            BlueprintName = "Calorie"
+            ReferencedContainer = "container:Calorie.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
